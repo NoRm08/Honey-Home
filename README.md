@@ -8,21 +8,21 @@
 Стек технологий:
 JS, TS, HTML5, CSS, React, Redux, Axios, Node.js, Express, JWT, Bcrypt, PostgreSQL, Sequelize, Chakra UI
 
-Установка:
-В директории 3 папки:
+В директории 3 папки
+Для запуска проекта необходимо:
 
-api/ Отвечает за back-end.
+api/ backend.
 cd server/
 npm i/
 npm run db/
 npm start/
 
-auth/ Отвечает за авторизацию.
+auth/ JWT.
 cd server/
 npm i/
 npm start/
 
-client/ - front-end.
+client/ frontend.
 cd client/
 npm i/
 npm run dev/
