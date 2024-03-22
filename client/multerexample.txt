@@ -1,0 +1,25 @@
+const [img, setImg] = useState(null);
+  const [avatar, setAvatar] = useState(null);
+  return (
+    <Container>
+      <Box sx={styleBox}>It is Chakra UI</Box>
+      {avatar ? (
+        <Image src={`http://localhost:3001/${avatar.slice(7)}`} />
+      ) : (
+        <Image src="http://localhost:3001/images/logo1.jpg" />
+      )}
+      <Input type="file" onChange={(e) => setImg(e.target.files[0])} />
+<Button
+        onClick={async () => {
+          const data = new FormData();
+          data.append('avatar', img);
+          const res = await axios.post('http://localhost:3001/api/upload', data, {
+            headers: { 'Content-Type': 'multipart/form-data' },
+          });
+          console.log(res.data);
+          setAvatar(res.data.path);
+        }}
+      >
+        set avatar
+      </Button>
+  )
