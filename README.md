@@ -8,17 +8,17 @@ JS, TS, HTML5, CSS, React, Redux, Axios, Node.js, Express, JWT, Bcrypt, PostgreS
 В директории 3 папки:
 
 api/ Отвечает за back-end.
-cd server
-npm i
-npm run db
-npm start
+cd server/
+npm i/
+npm run db/
+npm start/
 
 auth/ Отвечает за авторизацию.
-cd server
-npm i
-npm start
+cd server/
+npm i/
+npm start/
 
 client/ - front-end.
-cd client
-npm i
-npm run dev
+cd client/
+npm i/
+npm run dev/
